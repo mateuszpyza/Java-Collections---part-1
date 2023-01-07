@@ -13,7 +13,7 @@ public class Main {
         bidirectionalList.print();
         System.out.println();
         System.out.println("Lista składa się z "+bidirectionalList.size()+" elementów.");
-        bidirectionalList.add(0,"############");
+        bidirectionalList.add(6,"############");
         bidirectionalList.print();
         bidirectionalList.remove(6);
         bidirectionalList.print();

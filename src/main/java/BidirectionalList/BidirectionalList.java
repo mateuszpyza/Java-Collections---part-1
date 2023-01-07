@@ -83,6 +83,7 @@ public class BidirectionalList {
         }
     }
     public void remove(Integer index){
+        if (index > tail.getIndex() || index < 0) throw new IndexOutOfBoundsException();
         if (index==0){
             head = head.getNext();
             head.setPrevious(null);
@@ -92,7 +93,7 @@ public class BidirectionalList {
                 current=current.getNext();
             }
 
-        } else if (index>0 && index<tail.getIndex()) {
+        } else if (index<tail.getIndex()) {
             Node toRemove = head;
             while (toRemove.getIndex() != index ){
                 toRemove=toRemove.getNext();
