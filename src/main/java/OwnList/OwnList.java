@@ -1,4 +1,4 @@
-package interfaces;
+package OwnList;
 
 public interface OwnList {
 
